@@ -35,7 +35,7 @@ input = foo
 columns = [ x for row in input for x in row.keys() ]
 columns = list( set( columns ) )
 
-with open( fname, 'wb' ) as out_file:
+with open( fname, 'w' ) as out_file:
     csv_w = csv.writer( out_file )
     csv_w.writerow( columns )
 
